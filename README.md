@@ -2,6 +2,11 @@
 2025数理逻辑期末大作业项目一
 ## 使用说明
 
+## 0、环境准备（安装flex和bison）：
+```bash
+sudo apt install flex bison
+```
+
 ## 1、编译步骤：
 ```bash
 flex prop_lexer.l
