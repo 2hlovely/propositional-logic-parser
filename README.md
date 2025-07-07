@@ -11,18 +11,20 @@ sudo apt install flex bison
 ```bash
 flex prop_lexer.l
 bison -d prop_parser.y
-gcc -o prop_parser prop_parser.tab.c lex.yy.c -lfl
+gcc -finput-charset=UTF-8 -o prop_parser prop_parser.tab.c lex.yy.c ast.c -lfl
 ```
 
 ## 2、测试示例：
 ```bash
-echo "(p ∧ q) → r" | ./prop_parser
+echo "((p ∧ q) → r)" | ./prop_parser
 ```
 
 ## 3、语法树输出：
 程序会输出解析后的抽象语法树 (AST)，例如对于输入(p ∧ q) → r，输出如下：
 
 ```plaintext
+根节点类型: 6
+语法分析成功！
 IMPLIES
   AND
     ID: p
