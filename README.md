@@ -2,19 +2,19 @@
 2025数理逻辑期末大作业项目一
 ## 使用说明
 
-## 编译步骤：
+## 1、编译步骤：
 ```bash
 flex prop_lexer.l
 bison -d prop_parser.y
 gcc -o prop_parser prop_parser.tab.c lex.yy.c -lfl
 ```
 
-## 测试示例：
+## 2、测试示例：
 ```bash
 echo "(p ∧ q) → r" | ./prop_parser
 ```
 
-## 语法树输出：
+## 3、语法树输出：
 程序会输出解析后的抽象语法树 (AST)，例如对于输入(p ∧ q) → r，输出如下：
 
 ```plaintext
