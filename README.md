@@ -36,3 +36,6 @@ IMPLIES
 ```
 
 该项目基本支持所有基本命题逻辑运算符，包括否定 (¬)、合取 (∧)、析取 (∨)、蕴含 (→) 和等价 (↔)，并正确处理了运算符优先级。
+
+## License
+This project is licensed under the [MIT License](LICENSE).
